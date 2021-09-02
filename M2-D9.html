@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<!--
+IMPORTANT:
+Start from the previous Musical assignment project you've created on M2-D2
+    
+ASSIGNMENT RULES
+- The project must be pushed to a new repository and linked in EduFlow by the end of the day.
+- You can google / use StackOverflow BUT we suggest you to use just the material provided and documentation.
+- To test the page, open it with your browser and inspect it with developer tools / device emulator.
+- Use Bootstrap4.6 classes to create the page.
+- Use containers, rows and cols in order to achieve a great responsive layout.
+
+NOTE:
+Most of the requirements in this exercises reference a bootstrap's functionality or component. 
+Make sure you check the documentation before creting anything custom.
+-->
+
+<html>
+
+<head>
+    <!-- IMPORT ALL THE BOOSTRAP RELATED CSS & SCRIPTS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <style>
+        /* PREVIOUS CODE */
+        .album-container {
+            width: 250px;
+            height: 450px;
+        }
+        .album-cover {
+            width: 250px;
+            height: 250px;
+        }
+        .album-title {
+            font-size: larger;
+        }
+        .album-performer {
+            font-size: large;
+            font-style: italic;
+        }
+        .album-genre {
+            font-style: oblique;
+            font-size: medium;
+        }
+        .album-duration {
+            font-size: smaller;
+            color: lightgrey;
+        }
+        .album-description {
+            font-size: medium;
+        }
+        /* PREVIOUS CODE ENDS HERE*/
+
+
+        /* NEW CODE */
+        .bg-img {
+            background-image: url("https://images.unsplash.com/photo-1526572664450-0917b2674d32?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80");
+        }
+        /* NEW CODE */
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item ">
+                  <a class="nav-link" href="#great">Faves <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#hate">Hate</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#collage">Collage</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+      </nav>
+
+      <div class="jumbotron bg-img">
+          <div class="container">
+            <h1 class="display-4">Taste the music right here.</h1>
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            <p>It uses utility classes for typography and spacing to space content out within the larger container. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati facilis numquam totam enim culpa?</p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+          </div>
+      </div>
+
+      <div class="container mb-5">
+        <div class="row">
+            <div class="col-xl-3 col-md-4 col-sm-6 mt-5 col-4">
+                <img class="album-cover" src="https://images.unsplash.com/photo-1629516675579-9d3e908ebc17?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80">
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-6 mt-5 col-4">
+                <img class="album-cover" src="https://images.pexels.com/photos/3876401/pexels-photo-3876401.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-6 mt-5 col-4">
+                <img class="album-cover" src="https://images.unsplash.com/photo-1629516675579-9d3e908ebc17?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80">
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-6 mt-5 col-4">
+                <img class="album-cover" src="https://images.pexels.com/photos/2694040/pexels-photo-2694040.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-6 mt-5 col-4">
+                <img class="album-cover" src="https://images.pexels.com/photos/4412934/pexels-photo-4412934.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-6 mt-5 col-4">
+                <img class="album-cover" src="https://images.unsplash.com/photo-1629516675579-9d3e908ebc17?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80">
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-6 mt-5 col-4">
+                <img class="album-cover" src="https://images.pexels.com/photos/2268487/pexels-photo-2268487.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-6 mt-5 col-4">
+                <img class="album-cover" src="https://images.unsplash.com/photo-1629516675579-9d3e908ebc17?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80">
+            </div>
+        </div>
+        <a id="great"></a>
+    </div>
+
+      <div class="container">
+        <div class="row">
+            <div class="col-12 mt-5">
+                <h3>Favorite albums</h3>
+            </div>
+            <div class="col-xl-4 col-md-6 col-sm-6 mt-1 col-4 mb-4">
+                <div class="album-container">
+                    <div><img class="album-cover" src="https://images.pexels.com/photos/3876401/pexels-photo-3876401.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></div>
+                    <div class="album-title">The Booketh</div>
+                    <div class="album-duration">47 mins</div>
+                    <div class="album-performer">Davy Lee</div>
+                    <div class="album-genre">Alt Metal</div>
+                    <div class="album-decription">Lorem ipsum dolor sit amet ctetur adipisicing elit. Quaerat soluta ex qui?</div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-sm-6 mt-1 col-4 mb-4">
+                <div class="album-container">
+                    <div><img class="album-cover" src="https://images.pexels.com/photos/1068872/pexels-photo-1068872.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></div>
+                    <div class="album-title">The Booketh</div>
+                    <div class="album-duration">47 mins</div>
+                    <div class="album-performer">Davy Lee</div>
+                    <div class="album-genre">Alt Metal</div>
+                    <div class="album-decription">Lorem ipsum dolor sit amet ctetur adipisicing elit. Quaerat soluta ex qui?</div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-sm-6 mt-1 col-4 mb-4">
+                <div class="album-container">
+                    <div><img class="album-cover" src="https://images.unsplash.com/photo-1629516675579-9d3e908ebc17?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80"></div>
+                    <div class="album-title">The Booketh</div>
+                    <div class="album-duration">47 mins</div>
+                    <div class="album-performer">Davy Lee</div>
+                    <div class="album-genre">Alt Metal</div>
+                    <div class="album-decription">Lorem ipsum dolor sit amet ctetur adipisicing elit. Quaerat soluta ex qui?</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <div class="container">
+        <div class="row">
+            <a id="hate"></a>
+            <div class="col-12 mt-5">
+                <h3>Most hated</h3>
+            </div>
+            <div class="col-xl-4 col-md-6 col-sm-6 mt-1 col-4 mb-4">
+                <div class="album-container">
+                    <div><img class="album-cover" src="https://images.pexels.com/photos/2907454/pexels-photo-2907454.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"></div>
+                    <div class="album-title">The Booketh</div>
+                    <div class="album-duration">47 mins</div>
+                    <div class="album-performer">Davy Lee</div>
+                    <div class="album-genre">Alt Metal</div>
+                    <div class="album-decription">Lorem ipsum dolor sit amet ctetur adipisicing elit. Quaerat soluta ex qui?</div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-sm-6 mt-1 col-4 mb-4">
+                <div class="album-container">
+                    <div><img class="album-cover" src="https://images.unsplash.com/photo-1629516675579-9d3e908ebc17?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80"></div>
+                    <div class="album-title">The Booketh</div>
+                    <div class="album-duration">47 mins</div>
+                    <div class="album-performer">Davy Lee</div>
+                    <div class="album-genre">Alt Metal</div>
+                    <div class="album-decription">Lorem ipsum dolor sit amet ctetur adipisicing elit. Quaerat soluta ex qui?</div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-sm-6 mt-1 col-4 mb-4">
+                <div class="album-container">
+                    <div><img class="album-cover" src="https://images.pexels.com/photos/8801123/pexels-photo-8801123.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"></div>
+                    <div class="album-title">The Booketh</div>
+                    <div class="album-duration">47 mins</div>
+                    <div class="album-performer">Davy Lee</div>
+                    <div class="album-genre">Alt Metal</div>
+                    <div class="album-decription">Lorem ipsum dolor sit amet ctetur adipisicing elit. Quaerat soluta ex qui?</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-12"><h3>Here's my favourite artist:</h3></div>
+            <div class="col-4">
+                <img class="album-cover" src="https://images.unsplash.com/photo-1629516675579-9d3e908ebc17?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80">
+            </div>
+            <div class="col-4">
+                <img class="album-cover" src="https://images.pexels.com/photos/4412934/pexels-photo-4412934.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+            </div>
+            <div class="col-4">
+                <img class="album-cover" src="https://images.pexels.com/photos/2694040/pexels-photo-2694040.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+            </div>
+            <div class=" mt-1 col-12">
+
+                    <div class="album-title ">The One</div>
+                    <div class="album-performer">Jemma's Co</div>
+                    <div class="album-genre">Alternative R&B</div>
+                    <div class="album-decription">Lorem ipsum dolor sit amet ctetur adipisicing elit. Quaerat soluta ex qui?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure incidunt facilis animi esse, dolorem, corrupti modi odio possimus alias cumque temporibus repellendus aliquid assumenda voluptas? Veniam ad aspernatur illo ipsa.
+                    Numquam, voluptatibus corporis libero, quasi, repellendus praesentium alias laudantium ducimus quod accusantium odio in excepturi vitae vel non adipisci quia soluta nobis deleniti facilis ex porro autem sit. Laborum, illum.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <a id="collage"></a>
+            <div class="">
+                <img class="album-cover" src="https://images.pexels.com/photos/8832724/pexels-photo-8832724.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+            </div>
+            <div class="">
+                <img class="album-cover" src="https://images.pexels.com/photos/4307710/pexels-photo-4307710.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
+            </div>
+            <div class="">
+                <img class="album-cover" src="https://images.pexels.com/photos/191415/pexels-photo-191415.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+            </div>
+            <div class="">
+                <img class="album-cover" src="https://images.pexels.com/photos/2938046/pexels-photo-2938046.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+            </div>
+            <div class="">
+                <img class="album-cover" src="https://images.pexels.com/photos/4391611/pexels-photo-4391611.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
+            </div>
+            <div class="">
+                <img class="album-cover" src="https://images.pexels.com/photos/8593719/pexels-photo-8593719.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
+            </div>
+            <div class="">
+                <img class="album-cover" src="    https://images.pexels.com/photos/1579245/pexels-photo-1579245.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+            </div>
+            <div class="">
+                <img class="album-cover" src="https://images.pexels.com/photos/2264226/pexels-photo-2264226.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+            </div>
+
+            <div class="">
+                <img class="album-cover" src="https://images.pexels.com/photos/8832724/pexels-photo-8832724.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+            </div>
+            <div class="">
+                <img class="album-cover" src="https://images.pexels.com/photos/4307710/pexels-photo-4307710.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
+            </div>
+            <div class="">
+                <img class="album-cover" src="https://images.pexels.com/photos/191415/pexels-photo-191415.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+            </div>
+            <div class="">
+                <img class="album-cover" src="https://images.pexels.com/photos/2938046/pexels-photo-2938046.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+            </div>
+            <div class="">
+                <img class="album-cover" src="https://images.pexels.com/photos/4391611/pexels-photo-4391611.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
+            </div>
+            <div class="">
+                <img class="album-cover" src="https://images.pexels.com/photos/8593719/pexels-photo-8593719.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
+            </div>
+            <div class="">
+                <img class="album-cover" src="    https://images.pexels.com/photos/1579245/pexels-photo-1579245.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+            </div>
+            <div class="">
+                <img class="album-cover" src="https://images.pexels.com/photos/2264226/pexels-photo-2264226.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+            </div>
+            <div class="">
+                <img class="album-cover" src="https://images.pexels.com/photos/8832724/pexels-photo-8832724.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+            </div>
+            <div class="">
+                <img class="album-cover" src="https://images.pexels.com/photos/4307710/pexels-photo-4307710.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
+            </div>
+            <div class="">
+                <img class="album-cover" src="https://images.pexels.com/photos/191415/pexels-photo-191415.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+            </div>
+            <div class="">
+                <img class="album-cover" src="https://images.pexels.com/photos/2938046/pexels-photo-2938046.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+            </div>
+            <div class="">
+                <img class="album-cover" src="https://images.pexels.com/photos/4391611/pexels-photo-4391611.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
+            </div>
+            <div class="">
+                <img class="album-cover" src="https://images.pexels.com/photos/8593719/pexels-photo-8593719.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
+            </div>
+            <div class="">
+                <img class="album-cover" src="    https://images.pexels.com/photos/1579245/pexels-photo-1579245.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+            </div>
+            <div class="">
+                <img class="album-cover" src="https://images.pexels.com/photos/2264226/pexels-photo-2264226.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+            </div>
+           
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12"><h3>Footer_Area</h3></div>
+            <div class="col-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore excepturi impedit sequi, minima eius non, officiis nemo quo, quae suscipit autem! Eos doloremque, corrupti maxime accusantium ipsum quod nihil assumenda!
+            Iusto similique magni sint ex veritatis quam voluptas voluptatum magnam necessitatibus perferendis numquam non aperiam expedita, inventore aliquam! Temporibus incidunt ullam molestiae dolorum perferendis. Voluptate explicabo cupiditate iste voluptatum laboriosam!
+            Dicta provident neque vitae deleniti alias repudiandae libero, laborum similique vero consequatur reprehenderit at? Asperiores maxime, veritatis veniam corporis rem exercitationem recusandae distinctio quaerat earum fugiat labore! Incidunt, saepe fugiat!
+            Facere ad, nam atque id quidem tenetur eligendi minima quo! Dolorum molestiae aperiam illum corporis! Neque laborum, autem iure nihil minus porro sunt nulla impedit quia nemo ipsa perspiciatis molestiae.
+            Fugiat, adipisci recusandae tempore blanditiis soluta quibusdam impedit eum reiciendis ea molestiae eligendi odit culpa. Magni praesentium neque doloremque quos, vel fugit excepturi asperiores eaque cupiditate necessitatibus veritatis, animi sequi.
+            Officia velit praesentium atque! Vitae fugit veniam numquam non temporibus voluptas dignissimos, a quae accusamus dolore dolores corrupti velit ad harum! Velit dolore dolores, neque sed perferendis rem dignissimos voluptas!
+            Voluptatibus mollitia cum rem dolore ipsam in molestiae adipisci repellat beatae non amet iusto, dolores eaque? Debitis, minus aperiam porro, voluptate quia, distinctio repellendus nisi recusandae mollitia commodi aliquid quasi!
+            Tempore eos sint amet porro, beatae quo fugiat earum minima quis fugit, sunt soluta ipsam molestiae! Perspiciatis sapiente expedita accusantium eos, illo, quae corrupti qui consequuntur commodi dolores cupiditate fuga.</div>
+            <div class="col-2">Here's a few links you might enjoy:
+                <a href="#">Linkish</a>
+                <a href="#">Linkish</a>
+                <a href="#">Linkish</a>
+                <a href="#">Linkish</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- EXERCISE 1
+        Create a Jumbotron section with a quick explanation / image of the website.
+        Make it appear with a fade-in animation effect when the page loads.
+    -->
+
+    <!-- EXERCISE 2
+        Use a Bootstrap Card to contain every album in the favorite list you previously created.
+        Use the elements of a card bootstrap provides you with to display nicely the album informations such as: album title, artist, year, etc..
+    -->
+
+    <!-- EXERCISE 3
+        Foreach album in the favorite list, place a badge on the top-left corner of the album with the genre of the music
+    -->
+
+    <!-- EXERCISE 4
+        Create a new section with an album tracklist inside a Bootstrap table.
+        The row colors of the table must be alternated.
+
+        There should be a column for the track order number, one for the title and one for the track duration.
+        (If you want, you can also add extra columns)
+    -->
+
+    <!-- EXERCISE 5
+        Add a DELETE bootstrap button at the end of each row of the tracklist. 
+        Attach the functionality to remove its row when it gets clicked. (Requires DOM manipulation)  
+
+        ## EXTRA CSS CHALLENGE ##
+        Make only one button visible at a time, for each row, when the single row gets hovered. 
+        Animate it with a fade-in effect upon the user hovering and fade-out when he/she goes away from it.
+    -->
+
+    <!-- EXERCISE 6
+        Add an "Add Track" button under the tracklist of the album. 
+        It should have a nice shadow transition when its hovered (with the box-shadow property) 
+        to look like as if the button was elevating itself.
+    -->
+
+    <!-- EXERCISE 7
+        On the click of "Add Track" button, a modal should appear.
+        (check in the documentation the modal + button example)
+        
+        The modal shall contain single input fields (avoid using a <form> to wrap the inputs) with:
+        - Track number
+        - Track title
+        - Track duration
+
+        The fields should be inside an Input Group and divided in 2 columns.
+    -->
+
+    <!-- ############### -->
+    <!-- ###  EXTRA  ### -->
+    <!-- ############### -->
+
+    <!-- EXERCISE 8
+        The modal should contain 2 buttons at the bottom:
+        - Add => Adds a new track in the tracklist with the data of the input fields.
+        - Close => closes the modal
+
+        https://getbootstrap.com/docs/4.6/components/alerts/
+        [EXTRA] Make the message disappear after 5 seconds
+        https://www.w3schools.com/jsref/met_win_settimeout.asp
+    -->
+
+    <!-- EXERCISE 9
+        Alert the user with a success message when the track gets added, or when a track gets deleted.
+     -->
+
+    <!-- EXERCISE 10
+        Considering the "Add Track" functionality that you've created on ex. 8: 
+         - The new list-element added to the list should appear with a fade-in effect
+     -->
+
+    <!-- EXERCISE 11
+        Considering the button you've created in ex. 5 that deletes the row:
+        Add a fade-out effect to the row before it gets removed, using a CSS transition effect
+    -->
+</body>
+
+</html>
