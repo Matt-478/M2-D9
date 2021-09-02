@@ -57,9 +57,12 @@ Make sure you check the documentation before creting anything custom.
             background-image: url("https://images.unsplash.com/photo-1526572664450-0917b2674d32?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80");
         }
 
+        /* <!-- EXERCISE 1
+        Create a Jumbotron section with a quick explanation / image of the website.
+        Make it appear with a fade-in animation effect when the page loads.
+    --> */
         body .jumbotron{
             animation: fadeInAnimation ease 4s;
-            animation-fill-mode: forwards;
             /* animation: name duration timing-function delay iteration-count direction fill-mode;  */
         }
 
@@ -138,42 +141,72 @@ Make sure you check the documentation before creting anything custom.
         <a id="great"></a>
     </div>
 
+
+
+    <!-- EXERCISE 2
+        Use a Bootstrap Card to contain every album in the favorite list you previously created.
+        Use the elements of a card bootstrap provides you with to display nicely the album informations such as: album title, artist, year, etc..
+    -->
       <div class="container">
-        <div class="row">
-            <div class="col-12 mt-5">
-                <h3>Favorite albums</h3>
-            </div>
-            <div class="col-xl-4 col-md-6 col-sm-6 mt-1 col-4 mb-4">
-                <div class="album-container">
-                    <div><img class="album-cover" src="https://images.pexels.com/photos/3876401/pexels-photo-3876401.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></div>
-                    <div class="album-title">The Booketh</div>
-                    <div class="album-duration">47 mins</div>
-                    <div class="album-performer">Davy Lee</div>
-                    <div class="album-genre">Alt Metal</div>
-                    <div class="album-decription">Lorem ipsum dolor sit amet ctetur adipisicing elit. Quaerat soluta ex qui?</div>
+        <div class="card">
+            <div class="card-body">
+            <div class="row">
+                <div class="col-12 mt-5">
+                    <h3>Favorite albums</h3>
                 </div>
-            </div>
-            <div class="col-xl-4 col-md-6 col-sm-6 mt-1 col-4 mb-4">
-                <div class="album-container">
-                    <div><img class="album-cover" src="https://images.pexels.com/photos/1068872/pexels-photo-1068872.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></div>
-                    <div class="album-title">The Booketh</div>
-                    <div class="album-duration">47 mins</div>
-                    <div class="album-performer">Davy Lee</div>
-                    <div class="album-genre">Alt Metal</div>
-                    <div class="album-decription">Lorem ipsum dolor sit amet ctetur adipisicing elit. Quaerat soluta ex qui?</div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-md-6 col-sm-6 mt-1 col-4 mb-4">
-                <div class="album-container">
-                    <div><img class="album-cover" src="https://images.unsplash.com/photo-1629516675579-9d3e908ebc17?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80"></div>
-                    <div class="album-title">The Booketh</div>
-                    <div class="album-duration">47 mins</div>
-                    <div class="album-performer">Davy Lee</div>
-                    <div class="album-genre">Alt Metal</div>
-                    <div class="album-decription">Lorem ipsum dolor sit amet ctetur adipisicing elit. Quaerat soluta ex qui?</div>
+                <div class="col-xl-4 col-md-6 col-sm-6 mt-1 col-4 mb-4">
+                    <div class="album-container">
+                        <div><img class="album-cover" src="https://images.pexels.com/photos/3876401/pexels-photo-3876401.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></div>
+                        <div class="album-title">The Booketh</div>
+                        <div class="album-duration">47 mins</div>
+                        <div class="album-performer">Davy Lee</div>
+                        <div class="album-genre">Alt Metal</div>
+                        <div class="album-decription">Lorem ipsum dolor sit amet ctetur adipisicing elit. Quaerat soluta ex qui?</div>
+                    </div>
                 </div>
             </div>
         </div>
+          </div>
+
+
+
+
+          <div class="card" style="width: 18rem;">
+            <img src="https://images.pexels.com/photos/3876401/pexels-photo-3876401.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title mb-0">The Booketh</h5>
+              <div class="d-flex justify-content-between mb-2 mt-2">
+                <p class="card-text mb-0"><i>Davy Lee</i></p>
+                <p class="card-text mb-0"><small class="text-muted">47 mins</small></p>
+                <p class="card-text mb-0"><small class="text-muted">Alt Metal</small></p>
+              </div>
+              <p class="card-text">Lorem ipsum dolor sit amet ctetur adipisicing elit. Quaerat soluta ex qui?</p>
+            </div>
+          </div>
+
+
+          <div class="col-xl-4 col-md-6 col-sm-6 mt-1 col-4 mb-4">
+            <div class="album-container">
+                <div><img class="album-cover" src="https://images.pexels.com/photos/1068872/pexels-photo-1068872.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></div>
+                <div class="album-title">The Booketh</div>
+                <div class="album-duration">47 mins</div>
+                <div class="album-performer">Davy Lee</div>
+                <div class="album-genre">Alt Metal</div>
+                <div class="album-decription">Lorem ipsum dolor sit amet ctetur adipisicing elit. Quaerat soluta ex qui?</div>
+            </div>
+        </div>
+        <div class="col-xl-4 col-md-6 col-sm-6 mt-1 col-4 mb-4">
+            <div class="album-container">
+                <div><img class="album-cover" src="https://images.unsplash.com/photo-1629516675579-9d3e908ebc17?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80"></div>
+                <div class="album-title">The Booketh</div>
+                <div class="album-duration">47 mins</div>
+                <div class="album-performer">Davy Lee</div>
+                <div class="album-genre">Alt Metal</div>
+                <div class="album-decription">Lorem ipsum dolor sit amet ctetur adipisicing elit. Quaerat soluta ex qui?</div>
+            </div>
+        </div>
+
+
     </div>
 
       <div class="container">
@@ -339,15 +372,7 @@ Make sure you check the documentation before creting anything custom.
         </div>
     </div>
 
-    <!-- EXERCISE 1
-        Create a Jumbotron section with a quick explanation / image of the website.
-        Make it appear with a fade-in animation effect when the page loads.
-    -->
 
-    <!-- EXERCISE 2
-        Use a Bootstrap Card to contain every album in the favorite list you previously created.
-        Use the elements of a card bootstrap provides you with to display nicely the album informations such as: album title, artist, year, etc..
-    -->
 
     <!-- EXERCISE 3
         Foreach album in the favorite list, place a badge on the top-left corner of the album with the genre of the music
